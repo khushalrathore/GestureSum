@@ -17,8 +17,8 @@ To run this project, you need to have Python installed along with the required l
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/sign-language-detector.git
-    cd sign-language-detector
+    git clone https://github.com/khushalrathore/gesturesum.git
+    cd gesturesum-main
     ```
 
 2. **Install the required packages:**

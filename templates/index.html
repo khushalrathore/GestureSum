@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="wrapper">
+                <div class="logodiv">
+                    <a href="/" class="invincible"></a>
+                </div>
+                <div class="wrapper navLinksWrapper">
+                    <a id="menuItem1">How It Works
+                        <div id="submenuWrapper">
+                            <div class="submenuText" onclick="scrollToElement('techStackUsed')">Tech-Stack Used</div>
+                            <div class="submenuText" onclick="scrollToElement('gettingStarted')">Getting Started</div>
+                        </div>
+                    </a>
+                    <a id="menuItem2">Team Members
+                        <div id="submenuWrapper">
+                            <div class="submenuTextName">Arjun Sharma</div>
+                            <div class="submenuTextName">HarshVardhan Singh</div>
+                            <div class="submenuTextName">Kartikey Sharma</div>
+                            <div class="submenuTextName">Khushal Rathore</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/khushalrathore/gesturesum/archive/refs/heads/main.zip">
+                        <button class="try-btn"
+                            style="font-family: monospace;background: white;color: var(--theme) !important;"><span
+                                style="text-transform: initial;font-family: monospace;color: var(--theme) !important;background: none;">Download
+                                ASLI</span></button>
+                    </a>
+                </div>
+                <span class="menu" id="menu"><a class="invincible" href="#" id="mobile-menu">
+
+                    </a></span>
+                <nav class="mobNav" id="mobNav">
+                    <ul>HOW IT WORKS
+                        <li><a>Tech-Stack Used</a></li>
+                        <li><a>Getting Started</a></li>
+                    </ul>
+                    <ul>Team Members
+                        <li><a>Arjun Sharma</a></li>
+                        <li><a>HarshVardhan Singh</a></li>
+                        <li><a>Kartikey Sharma</a></li>
+                        <li><a>Khushal Rathore</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="title_window" style="background: none;color:var(--theme) !important">Hand Gesture Recognition</h1>
+        <p style="position: relative;width: max-content;"> > Place your hand inside the box <b class="boxbox"></b>
+        </p>
+        <div class="video-container">
+            <img id="video-feed" src="{{ url_for('video_feed_route') }}" alt="Video Feed">
+        </div>
+    </div>
+
+    <div id="techStackUsed">
+        <h1 class="title_window"
+            style="padding-inline:1rem;padding-right: 2rem;background: none;color: var(--theme) !important;">
+            Technology Stack Used</h1>
+        <div style="display: flex;flex-direction: row;flex-wrap: wrap;background: none;gap:3rem;">
+            <div class="card">FLASK</div>
+            <div class="card">OpenCV</div>
+            <div class="card">HTML, CSS</div>
+            <div class="card">JavaScript</div>
+
+        </div>
+    </div>
+
+    <div id="gettingStarted" style="background:var(--theme);display: flex;flex-direction: column;padding:2.5rem 1.5rem">
+        <h1 class="getStart"
+            style="padding-inline:1rem;max-width: fit-content;border-top-right-radius: 0.5rem;border-bottom-right-radius:0.5rem;padding-right: 2rem;text-decoration: underline;background: none !important;">
+            Getting Started</h1>
+        <ol style="padding: 1rem 1rem;background: none !important;">
+            <li>1. Go to "Download ASLI" button (the top right corner). </li>
+            <li>2. Locate the downloaded .zip file and extract it. </li>
+            <li>3. Open the extracted folder in VSCode or any IDE. </li>
+            <li>4. Run the following command in your IDE Terminal (within the root folder) : </li>
+            <li class="kbd">> pip install -r requirements.txt</li>
+            <li style="padding: 0rem 2rem;">Or</li>
+            <li class="kbd">> pip3 install -r requirements.txt</li>
+            <li style="padding: 0rem 2rem;">based on your pip configuration.</li>
+            <li>5. Once all the required packages are downloaded run this app using : </li>
+            <li class="kbd">> python index.py</li>
+            <li style="padding: 0rem 2rem;">Or</li>
+            <li class="kbd">> python3 index.py</li>
+            <li style="padding: 0rem 2rem;">based on your python configuration.</li>
+            <li>6. Voila! It's running on localhost. </li>
+
+
+
+        </ol>
+
+    </div>
+
+    <div id="teamMembers">
+        <h1 class="title_window"
+            style="padding-inline:0rem;padding-right: 2rem;background: none;color: var(--theme) !important;">
+            Team Members</h1>
+
+        <div style="display: flex;flex-direction: columns;flex-wrap: wrap;background: none;gap:1rem;background: none;">
+            <div class="teamRow"
+                style="display: flex; background: var(--theme-light);justify-content: space-between;align-items: center;flex-direction: row;">
+                <div class="teamRowText">
+                    <h1 class="title_window"
+                        style="padding-inline:0rem;padding-right: 2rem;background: none;color:white !important;font-size: 1.2rem;">
+                        Arjun Sharma</h1>
+
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad exercitationem
+                    commodi eum incidunt corrupti ab error, nostrum laudantium esse voluptatibus odio excepturi eos
+                    nulla necessitatibus, itaque nobis amet? Necessitatibus ipsam, amet, excepturi, ab dignissimos
+                    consequatur consequuntur iusto cupiditate nisi eum quos inventore! Fuga, veritatis! Assumenda nemo
+                    reiciendis voluptate inventore soluta!
+                </div>
+                <div class="teamRowImg">
+                    <div class="graphicDiv"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="display: flex;flex-direction: columns;flex-wrap: wrap;background: none;gap:1rem;background: none;">
+            <div class="teamRow"
+                style="display: flex; background: var(--theme-light);justify-content: space-between;align-items: center;flex-direction: row;">
+                <div class="teamRowText">
+                    <h1 class="title_window"
+                        style="padding-inline:0rem;padding-right: 2rem;background: none;color:white !important;font-size: 1.2rem;">
+                        HarshVardhan Singh</h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
+                    exercitationem
+                    commodi eum incidunt corrupti ab error, nostrum laudantium esse voluptatibus odio excepturi eos
+                    nulla necessitatibus, itaque nobis amet? Necessitatibus ipsam, amet, excepturi, ab dignissimos
+                    consequatur consequuntur iusto cupiditate nisi eum quos inventore! Fuga, veritatis! Assumenda nemo
+                    reiciendis voluptate inventore soluta!
+                </div>
+                <div class="teamRowImg">
+                    <div class="graphicDiv"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="display: flex;flex-direction: columns;flex-wrap: wrap;background: none;gap:1rem;background: none;">
+            <div class="teamRow"
+                style="display: flex; background: var(--theme-light);justify-content: space-between;align-items: center;flex-direction: row;">
+                <div class="teamRowText">
+                    <h1 class="title_window"
+                        style="padding-inline:0rem;padding-right: 2rem;background: none;color:white !important;font-size: 1.2rem;">
+                        Kartikey Sharma</h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad exercitationem
+                    commodi eum incidunt corrupti ab error, nostrum laudantium esse voluptatibus odio excepturi eos
+                    nulla necessitatibus, itaque nobis amet? Necessitatibus ipsam, amet, excepturi, ab dignissimos
+                    consequatur consequuntur iusto cupiditate nisi eum quos inventore! Fuga, veritatis! Assumenda nemo
+                    reiciendis voluptate inventore soluta!
+                </div>
+                <div class="teamRowImg">
+                    <div class="graphicDiv"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div style="display: flex;flex-direction: columns;flex-wrap: wrap;background: none;gap:1rem;background: none;">
+            <div class="teamRow"
+                style="display: flex; background: var(--theme-light);justify-content: space-between;align-items: center;flex-direction: row;">
+                <div class="teamRowText">
+                    <h1 class="title_window"
+                        style="padding-inline:0rem;padding-right: 2rem;background: none;color:white !important;font-size: 1.2rem;">
+                        Khushal Rathore</h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad exercitationem
+                    commodi eum incidunt corrupti ab error, nostrum laudantium esse voluptatibus odio excepturi eos
+                    nulla necessitatibus, itaque nobis amet? Necessitatibus ipsam, amet, excepturi, ab dignissimos
+                    consequatur consequuntur iusto cupiditate nisi eum quos inventore! Fuga, veritatis! Assumenda nemo
+                    reiciendis voluptate inventore soluta!
+                </div>
+                <div class="teamRowImg">
+                    <div class="graphicDiv"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="/static/js/index.js"></script>
+
+</body>
+
+</html>
